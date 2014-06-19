@@ -14,8 +14,7 @@ function initialise_main_menu_horizontal_functionality() {
         .hide(), $("#main-menu")
         .show(), $("#main-menu li.menu-item > a")
         .off(), $("#main-menu > li.menu-item")
-        .hover(function () {
-            console.log('a');
+        .hover(function () {           
         $(this)
             .addClass("active"), $(this)
             .children(".sub-menu")

@@ -8,14 +8,16 @@
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" />     
 <link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="css/owl.carousel.min.css" />
-<link rel="stylesheet" href="css/owl.theme.default.min.css" />
- 
+<link rel="stylesheet" href="css/owl.carousel.css" />
+<link rel="stylesheet" href="css/owl.theme.css" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/menu.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/responsive_images.js"></script>
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -29,25 +31,61 @@
         <div class="container">
             <header class="header isolated-block clearfix">
                 <div class="logo">
-                        <a href="index.html"><img id="logo_dark" alt="Logo" src="http://placehold.it/245x55"></a>
+                        <a href="index.html"><img id="logo" alt="Logo" src="images/logo.png"></a>
                 </div>
                 <div class="clearfix" id="main-menu-container">
                     <div class="btn btn-outline-inverse visible-xs" id="mobile-menu-icon"><span class="glyphicon glyphicon-th"></span></div>
                     <ul id="main-menu" class="" >
-                                            <li class="menu-item"><a href="index.html">Home</a>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item"><a href="index.html">Example 1</a></li>
-                                                    <li class="menu-item"><a href="index-2.html">Example 2</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item"><a href="about.html">About</a>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item"><a href="about.html">Test 1</a></li>
-                                                    <li class="menu-item"><a href="about-fullwidth.html">Test 2</a></li>
-                                                    <li class="menu-item"><a href="about-gallery.html">Test 3</a></li>
-                                                    <li class="menu-item"><a href="about-gallery-masonry.html">Test 4</a></li>
-                                                </ul>
-                                            </li>
+	                    <li class="menu-item"><a href="index.html">Home</a>
+	                        <ul class="sub-menu">
+	                            <li class="menu-item"><a href="index.html">Example 1</a></li>
+	                            <li class="menu-item"><a href="index-2.html">Example 2</a></li>
+	                        </ul>
+	                    </li>
+	                    <li class="menu-item"><a href="about.html">About</a>
+	                        <ul class="sub-menu">
+	                            <li class="menu-item"><a href="about.html">Test 1</a></li>
+	                            <li class="menu-item"><a href="about-fullwidth.html">Test 2</a></li>
+	                            <li class="menu-item"><a href="about-gallery.html">Test 3</a></li>
+	                            <li class="menu-item"><a href="about-gallery-masonry.html">Test 4</a></li>
+	                        </ul>
+	                    </li>
+	                    <li class="menu-item"><a href="index.html">Menu 3</a>
+	                        <ul class="sub-menu">
+	                            <li class="menu-item"><a href="index.html">Example 1</a></li>
+	                            <li class="menu-item"><a href="index-2.html">Example 2</a></li>
+	                        </ul>
+	                    </li>          
+	                    <li class="menu-item"><a href="index.html">Menu 4</a>
+	                        <ul class="sub-menu">
+	                            <li class="menu-item"><a href="index.html">Example 1</a></li>
+	                            <li class="menu-item"><a href="index-2.html">Example 2</a></li>
+	                        </ul>
+	                    </li>     
+	                    <li class="menu-item"><a href="index.html">Menu 5</a>
+	                        <ul class="sub-menu">
+	                            <li class="menu-item"><a href="index.html">Example 1</a></li>
+	                            <li class="menu-item"><a href="index-2.html">Example 2</a></li>
+	                        </ul>
+	                    </li>   
+	                    <li class="menu-item"><a href="index.html">Menu 6</a>
+	                        <ul class="sub-menu">
+	                            <li class="menu-item"><a href="index.html">Example 1</a></li>
+	                            <li class="menu-item"><a href="index-2.html">Example 2</a></li>
+	                        </ul>
+	                    </li>   
+	                    <li class="menu-item"><a href="index.html">Menu 7</a>
+	                        <ul class="sub-menu">
+	                            <li class="menu-item"><a href="index.html">Example 1</a></li>
+	                            <li class="menu-item"><a href="index-2.html">Example 2</a></li>
+	                        </ul>
+	                    </li>   
+	                    <li class="menu-item"><a href="index.html">Menu 8</a>
+	                        <ul class="sub-menu">
+	                            <li class="menu-item"><a href="index.html">Example 1</a></li>
+	                            <li class="menu-item"><a href="index-2.html">Example 2</a></li>
+	                        </ul>
+	                    </li>   	                    	                    	                    	                                                                                              
                     </ul>             
                 </div>                  
             </header>
@@ -65,22 +103,119 @@
                     $(document).ready(function(){
                         $(".owl-carousel").owlCarousel({
                             'items':1,
+                            singleItem: true,
+                            autoPlay: true,
                              loop:true,
                         });
                     });                    
                 </script>
             </div>
- 
-            <div class="row isolated-block">
-                <div class="col-lg-12">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum interdum mollis.
-                    Aliquam quis nisl purus. Maecenas fermentum eros urna. Phasellus congue vulputate nisi et semper. 
-                    Sed eu justo et tortor tincidunt volutpat. Mauris facilisis porta diam. Proin lobortis urna sit amet mauris pharetra cursus. 
-                    Nulla faucibus urna non nunc cursus, quis suscipit felis tempor. In pellentesque est ac est cursus convallis. 
-                    In mollis venenatis diam. Cras pulvinar, leo nec ultrices imperdiet, arcu ante commodo arcu, nec tempor dui turpis quis ante. 
-                    Nullam pellentesque, lorem vitae adipiscing mollis, mi elit vestibulum nisi, at accumsan nulla turpis sit amet lorem. 
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas hendrerit fringilla quam, eget sagittis purus suscipit eget. 
-                </div>
+ 			<div class="row">
+ 		 
+	            <div class="col-xs-12 col-lg-12">
+	                <div class="post-item isolated-block col-xs-12 col-lg-12">
+	                	<h1><a href="post">Donec eu ipsum vel turpis laoreet porttitor aac lectus</a></h1>
+	                	<div class="meta post-header clearfix">
+	                		<div class="meta-item posted-by"><span class="glyphicon glyphicon-user"></span> Posted by A. Lukyanov</div>
+	                	</div>
+	                    <div class="post-content text-content clearfix">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum interdum mollis.
+		                    Aliquam quis nisl purus. Maecenas fermentum eros urna. Phasellus congue vulputate nisi et semper. 
+		                    Sed eu justo et tortor tincidunt volutpat. Mauris facilisis porta diam. Proin lobortis urna sit amet mauris pharetra cursus. 
+		                    Nulla faucibus urna non nunc cursus, quis suscipit felis tempor. In pellentesque est ac est cursus convallis. 
+		                    In mollis venenatis diam. Cras pulvinar, leo nec ultrices imperdiet, arcu ante commodo arcu, nec tempor dui turpis quis ante. 
+		                    Nullam pellentesque, lorem vitae adipiscing mollis, mi elit vestibulum nisi, at accumsan nulla turpis sit amet lorem. 
+		                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas hendrerit fringilla quam, eget sagittis purus suscipit eget.
+	                    </div> 
+	                    <div class="meta post-header post-footer clearfix">
+	                        <ul class="meta-item tags clearfix">
+	                             <li class="icon"><span class="glyphicon glyphicon-tag"></span></li>
+	                             <li><a href="#">Tag 1</a></li>
+	                             <li><a href="#">Tag 2</a></li>
+	                         </ul>
+                        	<div class="meta-item comments"><a href="#"><span class="glyphicon glyphicon-comment"></span>Read more</a></div>
+	                    </div>	                    
+	                </div>
+
+	                <div class="post-item isolated-block col-xs-12 col-lg-12">
+	                	<h1><a href="post">Donec eu ipsum vel turpis laoreet porttitor aac lectus 1</a></h1>
+	                	<div class="meta post-header clearfix">
+	                		<div class="meta-item  posted-by"><span class="glyphicon glyphicon-user"></span> Posted by A. Lukyanov</div>
+	                	</div>	                	
+	                    <div class="post-content text-content clearfix">
+	                    <p><img width="740" class="center-block" alt="" src="http://placehold.it/740x471" style="vertical-align: middle; display: block;"></p>
+	                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum interdum mollis.
+		                    Aliquam quis nisl purus. Maecenas fermentum eros urna. Phasellus congue vulputate nisi et semper. 
+		                    Sed eu justo et tortor tincidunt volutpat. Mauris facilisis porta diam. Proin lobortis urna sit amet mauris pharetra cursus. 
+		                    Nulla faucibus urna non nunc cursus, quis suscipit felis tempor. In pellentesque est ac est cursus convallis. 
+		                    In mollis venenatis diam. Cras pulvinar, leo nec ultrices imperdiet, arcu ante commodo arcu, nec tempor dui turpis quis ante. 
+		                    Nullam pellentesque, lorem vitae adipiscing mollis, mi elit vestibulum nisi, at accumsan nulla turpis sit amet lorem. 
+		                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas hendrerit fringilla quam, eget sagittis purus suscipit eget.
+	                    </div>
+	                    <div class="meta post-header post-footer clearfix">
+	                        <ul class="meta-item tags clearfix">
+	                             <li class="icon"><span class="glyphicon glyphicon-tag"></span></li>
+	                             <li><a href="#">Tag 1</a></li>
+	                             <li><a href="#">Tag 2</a></li>
+	                         </ul>
+                        	<div class="meta-item comments"><a href="#"><span class="glyphicon glyphicon-comment"></span>Read more</a></div>
+	                    </div>	                     
+	                </div>
+	                
+	                <div class="post-item isolated-block col-xs-12 col-lg-12">
+	                	<h1><a href="post">Donec eu ipsum vel turpis laoreet porttitor aac lectus 3</a></h1>
+	                	<div class="meta post-header clearfix">
+	                		<div class="meta-item posted-by"><span class="glyphicon glyphicon-user"></span> Posted by A. Lukyanov</div>
+	                	</div>	                	
+	                    <div class="post-content text-content clearfix">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum interdum mollis.
+		                    Aliquam quis nisl purus. Maecenas fermentum eros urna. Phasellus congue vulputate nisi et semper. 
+		                     <p><img class="col-md-6" alt="" src="http://placehold.it/960x471" style="vertical-align: middle; display: block;"></p>
+		                    Sed eu justo et tortor tincidunt volutpat. Mauris facilisis porta diam. Proin lobortis urna sit amet mauris pharetra cursus. 
+		                    Nulla faucibus urna non nunc cursus, quis suscipit felis tempor. In pellentesque est ac est cursus convallis. 
+		                    In mollis venenatis diam. Cras pulvinar, leo nec ultrices imperdiet, arcu ante commodo arcu, nec tempor dui turpis quis ante. 
+		                    Nullam pellentesque, lorem vitae adipiscing mollis, mi elit vestibulum nisi, at accumsan nulla turpis sit amet lorem. 
+		                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas hendrerit fringilla quam, eget sagittis purus suscipit eget.
+	                    </div> 
+	                    <div class="meta post-header post-footer clearfix">
+	                        <ul class="meta-item tags clearfix">
+	                             <li class="icon"><span class="glyphicon glyphicon-tag"></span></li>
+	                             <li><a href="#">Tag 1</a></li>
+	                             <li><a href="#">Tag 2</a></li>
+	                         </ul>
+                        	<div class="meta-item comments"><a href="#"><span class="glyphicon glyphicon-comment"></span>Read more</a></div>
+	                    </div>
+	                </div>	
+	                
+	                <div class="pagination-container isolated-block col-xs-12 col-lg-12 text-center clearfix">
+	                	<ul class="pagination-list">
+	                		<li class="disabled"><a href="#">«</a></li>
+	                		<li class="active"><a href="#">1</a></li>
+	                		<li><a href="#">2</a></li>
+	                		<li><a href="#">3</a></li>
+	                		<li><a href="#">...</a></li>
+	                		<li><a href="#">8</a></li>
+	                		<li><a href="#">»</a></li>
+	                	</ul>
+	                </div>
+	                                	                
+	            </div>
+           	</div>
+            <div class="footer row clearfix">
+	            <div class="col-sm-6 text-left">
+	                <div class="text">
+	                    &copy; 2014 Sashas	                   
+	                </div>
+	            </div>
+	            <div class="col-sm-6 text-right">
+	                <ul class="social-media-icons clearfix">
+	                    <li><a title="Facebok" target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+	                    <li><a title="Twitter" target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+	                    <li><a title="Google+" target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li> 
+	                    <li><a title="GitHub" target="_blank" href="#"><i class="fa fa-github"></i></a></li>
+	                    <li><a title="Instagram" target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
+	                    <li><a title="LinkedIn" target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+	                    <li><a title="VK" target="_blank" href="#"><i class="fa fa-vk"></i></a></li>
+	                </ul>
+	            </div>
             </div>
         </div>
     </div>
